@@ -1,0 +1,93 @@
+.octocat {
+  display: inline-block;
+  width: 29%;
+  margin: 1%;
+  padding: 0;
+  position: relative;
+  font-family: helvetica, inherit;
+}
+
+.octocat img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cacaca;
+  border-radius: 1%;
+}
+
+.image-footer {
+  margin: 0;
+  padding: 0 0 5% 0;
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid #cacaca;
+}
+
+/* This is something I don't understand! Sudos & Carets */
+
+.image-footer::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-top-color: #cacaca;
+    position: absolute;
+    right: 11px;
+    top: 373px;
+}
+
+.image-number {
+  margin: 0;
+  padding: 0;
+  width: 7%;
+  display: inline-block;
+}
+
+.image-number::before {
+  content: "#"
+}
+
+.image-caption {
+  margin: 0;
+  padding: 0;
+  width: 91%;
+  text-align: right;
+  display: inline-block;;
+}
+
+.authors {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.authors img {
+  width: 10%;
+  border: 0;
+  border-radius: 2%;
+  position: relative;
+  top: 10px;
+}
+
+.authors li {
+  display: inline;
+}
+
+.image-footer span {
+  color: #777;
+  display: inline-block;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  display: inline;
+}
